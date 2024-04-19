@@ -2,11 +2,14 @@
 
 <html>
 <head>
-  {% load static %}
+  
+  {%load static%}
+  
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Landing Page</title>
-  <link rel="stylesheet" href={% static 'css/style.css'%}>
+  <link rel="stylesheet" href= {% static 'css/style.css'%}>
+  <script src="js/main.js"></script>
 </head>
 <body>
   <div id="header">
@@ -14,7 +17,7 @@
     <h1>Meet The <strong>ROG Phone 8 Pro</strong></h1>
     
     <div>
-    <img src={% static 'images/B46BEF43-3A3C-4A30-B73A-7A1434566EC8.png'%}>
+    <img src= {% static 'images/B46BEF43-3A3C-4A30-B73A-7A1434566EC8.png'%}>
     </div>
     
       <p>Step into the future of mobile gaming with the revolutionary and reimagined ROG Phone 8 Pro, an unprecedented blend of pure gaming prowess and everyday elegance: it’s a cutting-edge gaming phone that’s also a true premium phone. It’s powered by the Snapdragon® 8 Gen 3 Mobile Platform, with our enhanced thermal design for unparalleled performance. Feast your eyes on the 6.78-inch Samsung AMOLED with LTPO technology and up to 2500 nits peak brightness, and capture moments like a pro with the 6-Axis Hybrid Gimbal Stabilizer-equipped camera, which also has a 3x telephoto lens. Stay powered effortlessly and elevate your gaming and lifestyle with one extraordinary device.</p>
@@ -24,14 +27,14 @@
   <div id="table">
     <table>
       <tr>
-        <td><img src={% static 'images/cpu.png'%}></td>
+        <td><img src= {% static 'images/cpu.png'%}></td>
         <td>
           <h3>CPU</h3>
           Qualcomm Snapdragon 8 Gen 3</></td>
       </tr>
   
   <tr>
-        <td><img src={% static 'images/ram.png'%}></td>
+        <td><img src= {% static 'images/ram.png'%}></td>
         <td>
           <h3>RAM</h3>
           16GB, 24GB LPDDR5X</></td>
@@ -45,21 +48,21 @@
       </tr>
 
 <tr>
-        <td><img id="displayLogo" src={% static 'images/display.png'%}></td>
+        <td><img id="displayLogo" src= {% static 'images/display.png' %}></td>
         <td>
           <h3>DISPLAY</h3>
           6.78″ FHD+ SAMSUNG Flexible AMOLED @ 2400 x 1080 pixels, 165Hz refresh rate, HDR10+, 1,600 nits, Corning Gorilla Glass Victus 2</></td>
       </tr>
 
 <tr>
-        <td><img src={% static 'images/camera.png'%}></td>
+        <td><img src= {% static 'images/camera.png' %}></td>
         <td>
           <h3>CAMERA</h3>
           50MP Sony IMX890 OIS Quad Bayer technology main f/1.9, 32MP 3X optical zoom OIS f/2.4, 13MP 120° Ultrawide; 8K UHD @ 24fps, 4K UHD @ 30/60fps; 32MP Selfie Camera</></td>
       </tr>
 
 <tr>
-        <td><img src={% static 'images/os.png'%}></td>
+        <td><img src= {% static 'images/os.png'%}></td>
         <td>
           <h3>OS</h3>
 Android 14</td>
@@ -77,7 +80,7 @@ Android 14</td>
         <td><img src={% static 'images/prize.png'%}></td>
         <td>
           <h3>PRICE</h3>
-          {{lprice}} - {{hprice}}
+          {{lprice}} ~ {{hprice}}
         </td>
       </tr>
 
