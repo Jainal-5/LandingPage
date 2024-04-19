@@ -1,0 +1,70 @@
+body{
+  background-color: black;
+}
+
+#header{
+  overflow: hidden;
+  justify-content: center;
+  background-color: #3d3f42;
+  color:white;
+  padding:2%;
+  border-radius: 25px;
+}
+
+#header h1{
+  text-align: center;
+}
+
+#header div img{
+  width:60%;
+  height: 250px;
+  float:right;
+  
+}
+
+#header p{
+  text-align: justify;
+  text-indent: 10%;
+}
+
+#table{
+  margin :1%;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #3d3f42;
+  color:white;
+  padding:3%;
+  border-radius: 25px;
+  
+}
+
+#table table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+#table table img{
+  width:60%;
+  height:60%;
+}
+
+#table #displayLogo{
+  width:80%;
+  height: 100%;
+}
+
+#table table tr{
+  border-bottom: 2px solid black;
+}
+
+#table table tr td{
+  padding:2%;
+}
+
+#table table tr td p{
+  text-align: left;
+}
+
+#table table tr td p{
+  text-align: center;
+}
