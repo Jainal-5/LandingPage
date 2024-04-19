@@ -1,11 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "project/mySite/static", "use": "@vercel/static" },
-    { "src": "project/mySite/LandingPage", "use": "@vercel/static-build" }
+    { "src": "mySite/static", "use": "@vercel/static" },
+    { "src": "mySite/LandingPage", "use": "@vercel/static-build" }
   ],
   "routes": [
-    { "src": "/static/(.*)", "dest": "/project/mySite/static/$1" },
-    { "src": "/(.*)", "dest": "/project/mySite/LandingPage/$1" }
+    { "src": "/static/(.*)", "dest": "/mySite/static/$1" },
+    { "src": "/(.*)", "dest": "/mySite/LandingPage/$1" }
   ]
 }
