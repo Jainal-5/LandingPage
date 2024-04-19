@@ -1,15 +1,11 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "api/**/*.py",
-      "use": "@vercel/python"
-    }
+    { "src": "project/mySite/static", "use": "@vercel/static" },
+    { "src": "project/mySite/LandingPage", "use": "@vercel/static-build" }
   ],
   "routes": [
-    { 
-      "src": "/(.*)", 
-      "dest": "manage.py" 
-    }
+    { "src": "/static/(.*)", "dest": "/project/mySite/static/$1" },
+    { "src": "/(.*)", "dest": "/project/mySite/LandingPage/$1" }
   ]
 }
