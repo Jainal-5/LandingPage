@@ -6,7 +6,10 @@
       "use": "@vercel/python"
     }
   ],
-  "routes":[{
-    "src":"mySite/wsgi.py"
-  }]
+  "routes": [
+    { 
+      "src": "/(.*)", 
+      "dest": "mySite/wsgi.py" 
+    }
+  ]
 }
