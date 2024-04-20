@@ -5,9 +5,12 @@ body{
 #header{
   overflow: hidden;
   justify-content: center;
-  background-color: #3d3f42;
+}
+
+div{
+background-color: #3d3f42;
   color:white;
-  padding:2%;
+  padding:5%;
   border-radius: 25px;
 }
 
@@ -31,11 +34,6 @@ body{
   margin :1%;
   overflow: hidden;
   justify-content: center;
-  background-color: #3d3f42;
-  color:white;
-  padding:3%;
-  border-radius: 25px;
-  
 }
 
 #table table{
@@ -67,4 +65,10 @@ body{
 
 #table table tr td p{
   text-align: center;
+}
+
+#imgCon img{
+  width:50%;
+  height:50%;
+  float: right;
 }

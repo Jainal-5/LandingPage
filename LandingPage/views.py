@@ -18,7 +18,6 @@ def home(request):
         soup = BeautifulSoup(response.content, 'html.parser')
         price_element = soup.findAll('h4')
         price = price_element if price_element else 'Price is not available'
-      
     except requests.RequestException as e:
         price = f'Error: {e}'
     
